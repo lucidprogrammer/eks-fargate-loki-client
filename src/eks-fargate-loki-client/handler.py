@@ -40,7 +40,7 @@ sys.stderr.write('Ignoring logs from containers -')
 sys.stderr.write('\n')
 
 try:
-    config.load_kube_config()
+    config.load_kube_config()  # may be in development mode
 except TypeError:
     config.load_incluster_config()
 

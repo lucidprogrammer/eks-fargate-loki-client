@@ -47,7 +47,7 @@ spec:
                 - name: NAMESPACE
                   value: "qa,perf"  # replace with the namespaces you have created with fargateprofile
                 - name: LOKI_URL
-                  value: http://loki.loki:3100
+                  value: http://loki.loki:3100 # replace with the loki url
                 - name: IGNORE_APPS
                   value: "log-exporter,bull-exporter" # replace with any apps you are not interested in to get logs shipped to loki
                 - name: IGNORE_CONTAINERS

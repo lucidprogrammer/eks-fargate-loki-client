@@ -9,7 +9,7 @@ As an alternative, add one additional workload in the same selector/namespace to
 
 ## Deployment
 
-Samples for deployment in [k8s](k8s/)
+Samples for deployment in [k8s](k8s/). Current implementation is only for namespaces. Same approach could be done for selectors if needed.
 
 ## Dev Setup - Using Telepresence
 

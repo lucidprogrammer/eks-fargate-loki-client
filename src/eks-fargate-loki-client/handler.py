@@ -86,7 +86,7 @@ class PodLogThread(threading.Thread):
             try:
                 for e in pod_stream:
                     try:
-                        self.logger.error(e, extra={"tags": {"app": self.app,"namespace":self.namespace,"container":self.container}},)
+                        self.logger.error(e, extra={"tags": {"app": self.app,"namespace":self.namespace,"container":self.container,"pod":self.pod}},)
                     except:
                         sys.stderr.write('Logging error %s-%s-%s\n' %(self.namespace,self.app,self.container) )
             except:
